@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="container">
-        <div class="intro">
-            <h1>QuizMaster</h1>
-            <p>Answer 10 questions and test your knowledge.</p>
-        </div>
+    <nav class="navbar">
+        <h2>QuizMaster</h2>
 
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#quizForm">Quiz</a>
+            <a href="#result">Result</a>
+            <button id="navRestart">Restart</button>
+        </div>
+    </nav>
+    <main class="container">
+        
         <form id="quizForm">
             <div id="quizContainer"></div>
             <button type="submit">
