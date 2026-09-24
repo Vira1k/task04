@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="intro">
+            <h1>QuizMaster</h1>
+            <p>Answer 10 questions and test your knowledge.</p>
+        </div>
+
+        <form id="quizForm">
+            <div id="quizContainer"></div>
+            <button type="submit">
+                Submit Quiz
+            </button>
+        </form>
+
+        <div id="result" class="hidden">
+            <h2>Quiz Completed!</h2>
+            <span id="score">0/10</span>
+            <button id="restartBtn">
+                Restart Quiz
+            </button>
+        </div>
+
+        <p id="message"></p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
