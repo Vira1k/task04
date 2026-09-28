@@ -8,6 +8,7 @@ const message = document.getElementById("message");
 async function loadQuiz() {
     try {
         message.innerText = "Loading questions...";
+        quiz.innerHTML = "";
         const response = await fetch(API);
         if (!response.ok) {
             throw new Error("API Error " + response.status);
@@ -46,9 +47,7 @@ form.onsubmit = function (event) {
     event.preventDefault();
     let marks = 0;
     questions.forEach((q, i) => {
-        const answer = document.querySelector(
-            `input[name="q${i}"]:checked`
-        );
+        const answer = document.querySelector(`input[name="q${i}"]:checked` );
         if (answer && answer.value === q.correct_answer) {
             marks++;
         }
